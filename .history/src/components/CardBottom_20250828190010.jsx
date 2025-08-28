@@ -50,14 +50,8 @@ function CardBottom() {
     return `${((h  * 100) / value).toFixed(1)}% `
     // return "h-[150px]"
   }
-  // hozirgi hafta
+
   const total = chartData.reduce((acc, cur) => acc + cur.value, 0)
-
-  // O'tgan Hafta harajat
-  const lastMonthTotal = 320
-
-  // O'tgan xaftaga qaraganda foizlar
-  const percentChange = (((total - lastMonthTotal) / lastMonthTotal) * 100).toFixed(1)
 
   
   return (
@@ -83,27 +77,12 @@ function CardBottom() {
          )
         })}
       </ul>
-      
-      
-
-
-<div className='mt-6 w-full'>
-  <div className="bg-cream h-0.5 w-full mb-6"></div>
-  <div className='flex items-start justify-between w-full'>
-    
-    <div className='flex flex-col items-start'>
-      <span className="text-medium-brown font-normal">Total this month:</span>
-      <span className='font-bold text-5xl text-dark-brown'>${total}</span>
-    </div>
-
-    <div className='flex flex-col items-end mt-7'>
-      <span className={`font-medium ${percentChange >= 0 ? "text-green-600" : "text-red-600"}`}>
-        {percentChange >= 0 ? `+${percentChange}%` : `${percentChange}%`}
-      </span>
-      <span className='text-medium-brown'>from last month</span>
-    </div>
-  </div>
-</div>
+      <span className='w-[460px] h-0.5 bg-card-white'></span>
+      <div className='flex flex-col'>
+      <span className="bg-cream w-[460px] h-0.5"></span>
+      <span className="text-medium-brown font-normal leading-[1] ">Total this month:</span>
+      <br />
+      </div>
     </div>
   )
 }

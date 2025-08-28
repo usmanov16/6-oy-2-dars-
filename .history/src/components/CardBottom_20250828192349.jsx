@@ -96,7 +96,7 @@ function CardBottom() {
       <span className='font-bold text-5xl text-dark-brown'>${total}</span>
     </div>
 
-    <div className='flex flex-col items-end mt-7'>
+    <div className='flex flex-col items-end '>
       <span className={`font-medium ${percentChange >= 0 ? "text-green-600" : "text-red-600"}`}>
         {percentChange >= 0 ? `+${percentChange}%` : `${percentChange}%`}
       </span>

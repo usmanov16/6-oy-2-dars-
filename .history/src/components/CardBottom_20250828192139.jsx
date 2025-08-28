@@ -88,15 +88,19 @@ function CardBottom() {
 
 
 <div className='mt-6 w-full'>
+  {/* Общая линия на всю ширину */}
   <div className="bg-cream h-0.5 w-full mb-6"></div>
+
+  {/* Контейнер с левой и правой частью */}
   <div className='flex items-start justify-between w-full'>
-    
+    {/* Левая сторона */}
     <div className='flex flex-col items-start'>
       <span className="text-medium-brown font-normal">Total this month:</span>
       <span className='font-bold text-5xl text-dark-brown'>${total}</span>
     </div>
 
-    <div className='flex flex-col items-end mt-7'>
+    {/* Правая сторона */}
+    <div className='flex flex-col items-end'>
       <span className={`font-medium ${percentChange >= 0 ? "text-green-600" : "text-red-600"}`}>
         {percentChange >= 0 ? `+${percentChange}%` : `${percentChange}%`}
       </span>
