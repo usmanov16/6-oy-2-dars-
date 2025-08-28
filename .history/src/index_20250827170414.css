@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+
+@theme  {
+    --color-red: #EC755D;
+    --color-cream: #F8E9DD;
+    --color-card-white: #FFFBF6;
+    --color-white: #FFFFFF;
+    --color-cyan: #76B5BC;
+    --color-medium-brown: #92857A;
+    --color-dark-brown: #382314;
+
+    /* font */
+    --default-font-family: 'DM Sans Variable', sans-serif;
+
+
+}
+
+@layer base {
+    body {
+        @apply text-lg text-medium-brown font-normal l1 bg-cream flex items-center justify-center min-h-screen;                
+    }
+}

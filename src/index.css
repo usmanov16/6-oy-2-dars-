@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-red: #ec755d;
+  --color-cream: #f8e9dd;
+  --color-card-white: #fffbf6;
+  --color-white: #ffffff;
+  --color-cyan: #76b5bc;
+  --color-medium-brown: #92857a;
+  --color-dark-brown: #382314;
+
+  /* font */
+  --default-font-family: "DM Sans Variable", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply text-lg text-medium-brown font-normal leading-[1] bg-cream flex items-center justify-center min-h-screen;
+  }
+}
+
+@layer components {
+  .chart-item span {
+    display: none;
+  }
+
+  .chart-item:hover span {
+    display: block;
+  }
+}

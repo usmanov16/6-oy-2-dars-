@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+
+
+@theme  {
+    --color-red: #EC755D;
+    --color-cream: #F8E9DD;
+    --color-card-white: #FFFBF6;
+    --color-white: #FFFFFF;
+    --color-cyan: #76B5BC;
+    --color-medium-brown: #92857A;
+    --color-dark-brown: #382314;
+
+}
+
+@layer base {
+    body {
+        @apply bg-red flex items-center justify-center min-h-screen;                
+    }
+}
